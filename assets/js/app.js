@@ -14,7 +14,7 @@ function removeDropdownToggle() {
   window.addEventListener('resize', removeDropdownToggle);
   
 
-  var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset;
 var header = document.querySelector('#header');
 
 window.addEventListener('scroll', function() {

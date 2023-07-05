@@ -22,6 +22,11 @@ section#header{
 ul.dropdown-menu{
     background-color:  rgb(194 194 194 / 83%);
 }
+.myDropIcon{
+    display: none;
+    font-size: 10px;
+}
+
 /* section#home */
 
 section#home img{
@@ -114,6 +119,14 @@ section#footer{
     }
     .mySearch{
         display: none !important;
+    }
+    a.nav-link{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .myDropIcon{
+        display: inline-block;
     }
     section#home .home-content{
         flex-wrap: wrap;
