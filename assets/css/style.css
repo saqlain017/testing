@@ -7,11 +7,6 @@ body{
 section#header{
     border-bottom: 1px solid #c2c2c2;
 }
-ul.dropdown-menu{
-    background-color: #d7cfcff5;
-    border: 0;
-    outline: 0;
-}
 .myNavIcons{
     display: flex;
     flex-direction: row-reverse;
@@ -24,7 +19,9 @@ ul.dropdown-menu{
 .mySearch{
     display: block;
 }
-
+ul.dropdown-menu{
+    background-color:  rgb(194 194 194 / 83%);
+}
 /* section#home */
 
 section#home img{
@@ -58,6 +55,36 @@ Section#whyChooseUs::before{
     left: 0;
 }
 
+/* section#connectbanner */
+section#connectbanner{
+    background: #0045a6;
+}
+section#connectbanner .connect-btn{
+    border: 1px solid #fff ;
+    color: #fff;
+    background-color: #0045a6 ;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 400 ;
+    padding: 13px 38px ;
+    transition: 1s;
+}
+section#connectbanner .connect-btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* section#features */
+section#features{
+    background-color: #FAFAFA;
+    color: #757575;
+}
+
+/* section#featured-cards */
+section#featured-cards{
+    background-color: #FAFAFA;
+}
+
 /* section#footer */
 section#footer{
     background-color: #202022;
@@ -66,6 +93,12 @@ section#footer{
 
 /* media screen for making drop downlist of navbar links */
 @media screen and (min-width:992px){
+    li.nav-item:hover ul.dropdown-menu {
+        display: block;
+        left: 0;
+        width: 100vw;
+        top: 100%;
+      }
     li.nav-item{
         position: static;
     }
@@ -105,7 +138,61 @@ section#footer{
     section#whyChooseUs .answer-why .answer-image{
         margin-bottom: 50px;
     }
+    section#worldClassTeam .Team-info{
+        flex-direction: column;
+    }
+    section#worldClassTeam .Team-info .whyTeam{
+        flex-basis: 100% !important;
+        width: 100% !important;
+    }
+    section#worldClassTeam .Team-info .whyTeam h2{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    section#worldClassTeam .Team-info .Team-intro{
+        flex-basis: 100% !important;
+    }
+    section#connectbanner .connect-box{
+        flex-direction: column;
+    }
+    section#connectbanner .connect-text{
+        flex-basis: 100% !important;
+        width: 100% !important;
+    }
+    section#details .detail-card{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+    section#details .detail-card.card-sp{
+        flex-direction: column !important;
+    }
+    section#details .detail-card .detail-card-image{
+        flex-basis:100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    section#details .detail-card .detail-card-text{
+        flex-basis:100% !important;
+        text-align: center;
+        padding-left: 0 !important;
+    }
+    section#details .detail-card .detail-card-text li{
+        text-align: left !important;
+    }
 
+    section#featured-cards .card{
+         width: 100% !important;
+         min-width: 0 !important;
+    }
+    section#featured-cards .card .col-md-4{
+        width:25% !important;
+    }
+    section#featured-cards .card .col-md-8{
+        width: 75% !important;
+    }
+    section#featured-cards .card .col-md-8 h4{
+        width: 100%;
+    }
 }
 @media screen and (max-width:786px){
     .ftr-scl-ul{
